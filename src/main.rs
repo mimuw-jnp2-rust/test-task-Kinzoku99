@@ -1,5 +1,5 @@
-fn test() -> bool {
-   false
+fn test() -> &'static str {
+   "Andrzej Głuszak"
 }
 
 fn main() {
@@ -12,6 +12,6 @@ mod tests {
 
     #[test]
     fn it_works() {
-        assert!(test());
+        assert!(test() == "Andrzej Głuszak");
     }
 }
